@@ -35,29 +35,31 @@
   </div>
   <div class="container">
     <tr>
-      <table border="1"><tr><th>Blue Team</th></tr>
+      <table border="1"><tr><th><div class="text-center">Blue Team</div></th></tr>
+        <tbody>
+          <!-- {{ range . }}
+
+          {{ end }} -->
+        </tbody>
+      </table>
+
+
+      <table class="champ" border="1"><tr><th><div class="text-center">Champions</div></th></tr>
         <tbody>
           {{ range . }}
-
+          <a href="{{ .Champ }}">
+            <img src="{{ .Champ }}.png" target>
+          </a>
           {{ end }}
         </tbody>
       </table>
 
 
-      <table class="champ" border="1"><tr><th>Champions</th></tr>
+      <table border="1"><tr><th><div class="text-center">Red Team</div></th></tr>
         <tbody>
-          {{ range . }}
+          <!-- {{ range . }}
 
-          {{ end }}
-        </tbody>
-      </table>
-
-
-      <table border="1"><tr><th>Red Team</th></tr>
-        <tbody>
-          {{ range . }}
-
-          {{ end }}
+          {{ end }} -->
         </tbody>
       </table>
     </tr>
